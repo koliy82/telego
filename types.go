@@ -487,6 +487,8 @@ func (c *ChatFullInfo) UnmarshalJSON(data []byte) error {
 				uc.AvailableReactions[i] = &ReactionTypeEmoji{}
 			case ReactionCustomEmoji:
 				uc.AvailableReactions[i] = &ReactionTypeCustomEmoji{}
+			case ReactionPaid:
+				uc.AvailableReactions[i] = &ReactionTypePaid{}
 			default:
 				return fmt.Errorf(unknownReactionTypeErr, reactionType)
 			}
@@ -3510,6 +3512,7 @@ type ReactionType interface {
 const (
 	ReactionEmoji       = "emoji"
 	ReactionCustomEmoji = "custom_emoji"
+	ReactionPaid        = "paid"
 )
 
 // ReactionTypeEmoji - The reaction is based on an emoji.
@@ -3550,6 +3553,19 @@ func (r *ReactionTypeCustomEmoji) ReactionType() string {
 
 func (r *ReactionTypeCustomEmoji) iReactionType() {}
 
+// ReactionTypePaid The reaction is paid.
+type ReactionTypePaid struct {
+	// Type - Type of the reaction, always “paid”
+	Type string `json:"type"`
+}
+
+// ReactionType returns reaction type
+func (r *ReactionTypePaid) ReactionType() string {
+	return ReactionPaid
+}
+
+func (r *ReactionTypePaid) iReactionType() {}
+
 // ReactionCount - Represents a reaction added to a message along with the number of times it was added.
 type ReactionCount struct {
 	// Type - Type of the reaction
@@ -3582,6 +3598,8 @@ func (c *ReactionCount) UnmarshalJSON(data []byte) error {
 		uc.Type = &ReactionTypeEmoji{}
 	case ReactionCustomEmoji:
 		uc.Type = &ReactionTypeCustomEmoji{}
+	case ReactionPaid:
+		uc.Type = &ReactionTypePaid{}
 	default:
 		return fmt.Errorf(unknownReactionTypeErr, reactionType)
 	}
@@ -3648,6 +3666,8 @@ func (u *MessageReactionUpdated) UnmarshalJSON(data []byte) error {
 			uu.OldReaction[i] = &ReactionTypeEmoji{}
 		case ReactionCustomEmoji:
 			uu.OldReaction[i] = &ReactionTypeCustomEmoji{}
+		case ReactionPaid:
+			uu.OldReaction[i] = &ReactionTypePaid{}
 		default:
 			return fmt.Errorf(unknownReactionTypeErr, reactionType)
 		}
@@ -3662,6 +3682,8 @@ func (u *MessageReactionUpdated) UnmarshalJSON(data []byte) error {
 			uu.NewReaction[i] = &ReactionTypeEmoji{}
 		case ReactionCustomEmoji:
 			uu.NewReaction[i] = &ReactionTypeCustomEmoji{}
+		case ReactionPaid:
+			uu.NewReaction[i] = &ReactionTypePaid{}
 		default:
 			return fmt.Errorf(unknownReactionTypeErr, reactionType)
 		}
