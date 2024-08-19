@@ -6,7 +6,7 @@ import (
 	"os/signal"
 	"time"
 
-	"github.com/mymmrac/telego"
+	"github.com/koliy82/telego"
 )
 
 func main() {

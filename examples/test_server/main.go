@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/mymmrac/telego"
+	"github.com/koliy82/telego"
 )
 
 // Using bots in the test environment:

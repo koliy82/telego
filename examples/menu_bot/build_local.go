@@ -7,7 +7,7 @@ import (
 	"log"
 
 	"github.com/fasthttp/router"
-	"github.com/mymmrac/telego"
+	"github.com/koliy82/telego"
 	"github.com/valyala/fasthttp"
 	"golang.ngrok.com/ngrok"
 	"golang.ngrok.com/ngrok/config"

@@ -19,9 +19,9 @@ impacts order of checking matched handlers, and only the first matched handler w
 		"fmt"
 		"os"
 
-		"github.com/mymmrac/telego"
-		th "github.com/mymmrac/telego/telegohandler"
-		tu "github.com/mymmrac/telego/telegoutil"
+		"github.com/koliy82/telego"
+		th "github.com/koliy82/telego/telegohandler"
+		tu "github.com/koliy82/telego/telegoutil"
 	)
 
 	func main() {
@@ -78,9 +78,9 @@ One more example of handler usage. It shows how to use specific handlers to proc
 		"fmt"
 		"os"
 
-		"github.com/mymmrac/telego"
-		th "github.com/mymmrac/telego/telegohandler"
-		tu "github.com/mymmrac/telego/telegoutil"
+		"github.com/koliy82/telego"
+		th "github.com/koliy82/telego/telegohandler"
+		tu "github.com/koliy82/telego/telegoutil"
 	)
 
 	func main() {
@@ -137,8 +137,8 @@ In this example, usage of groups and middleware will be shown.
 		"fmt"
 		"os"
 
-		"github.com/mymmrac/telego"
-		th "github.com/mymmrac/telego/telegohandler"
+		"github.com/koliy82/telego"
+		th "github.com/koliy82/telego/telegohandler"
 	)
 
 	func main() {

@@ -7,7 +7,7 @@ import (
 	"github.com/fasthttp/router"
 	"github.com/valyala/fasthttp"
 
-	"github.com/mymmrac/telego"
+	"github.com/koliy82/telego"
 )
 
 func main() {

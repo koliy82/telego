@@ -3,9 +3,9 @@ package main
 import (
 	"log"
 
-	"github.com/mymmrac/telego"
-	th "github.com/mymmrac/telego/telegohandler"
-	tu "github.com/mymmrac/telego/telegoutil"
+	"github.com/koliy82/telego"
+	th "github.com/koliy82/telego/telegohandler"
+	tu "github.com/koliy82/telego/telegoutil"
 )
 
 func RegisterHandlers(bh *th.BotHandler) {

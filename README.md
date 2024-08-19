@@ -59,7 +59,7 @@ For more detailed documentation, see docs at [telego.pixelbox.dev](https://teleg
 How to get the library:
 
 ```shell
-go get github.com/mymmrac/telego
+go get github.com/koliy82/telego
 ```
 
 Make sure you get the latest version to have all new features & fixes.
@@ -298,7 +298,7 @@ import (
 	"os"
 
 	"github.com/mymmrac/telego"
-	tu "github.com/mymmrac/telego/telegoutil"
+	tu "github.com/koliy82/telego/telegoutil"
 )
 
 func main() {
@@ -351,7 +351,7 @@ utility-helper function that will make your life a bit easier.
 I suggest including it with alias to get cleaner code:
 
 ```go
-import tu "github.com/mymmrac/telego/telegoutil"
+import tu "github.com/koliy82/telego/telegoutil"
 ```
 
 The package contains couple methods for creating send parameters with all required parameters like:
@@ -388,7 +388,7 @@ package main
 
 import (
 	"github.com/mymmrac/telego"
-	tu "github.com/mymmrac/telego/telegoutil"
+	tu "github.com/koliy82/telego/telegoutil"
 )
 
 func main() {
@@ -442,7 +442,7 @@ Also, all handlers (but not their predicates) are processed in parallel.
 I suggest including it with alias to get cleaner code:
 
 ```go
-import th "github.com/mymmrac/telego/telegohandler"
+import th "github.com/koliy82/telego/telegohandler"
 ```
 
 Here is an example of using handlers with long polling updates.
@@ -457,8 +457,8 @@ import (
 	"os"
 
 	"github.com/mymmrac/telego"
-	th "github.com/mymmrac/telego/telegohandler"
-	tu "github.com/mymmrac/telego/telegoutil"
+	th "github.com/koliy82/telego/telegohandler"
+	tu "github.com/koliy82/telego/telegoutil"
 )
 
 func main() {
@@ -522,8 +522,8 @@ import (
 	"fmt"
 
 	"github.com/mymmrac/telego"
-	th "github.com/mymmrac/telego/telegohandler"
-	tu "github.com/mymmrac/telego/telegoutil"
+	th "github.com/koliy82/telego/telegohandler"
+	tu "github.com/koliy82/telego/telegoutil"
 )
 
 func main() {
@@ -567,7 +567,7 @@ import (
 	"fmt"
 
 	"github.com/mymmrac/telego"
-	th "github.com/mymmrac/telego/telegohandler"
+	th "github.com/koliy82/telego/telegohandler"
 )
 
 func main() {

@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/mymmrac/telego"
-	th "github.com/mymmrac/telego/telegohandler"
+	"github.com/koliy82/telego"
+	th "github.com/koliy82/telego/telegohandler"
 )
 
 func main() {
