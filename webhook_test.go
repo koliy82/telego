@@ -12,8 +12,8 @@ import (
 	"github.com/valyala/fasthttp"
 	"go.uber.org/mock/gomock"
 
-	"github.com/mymmrac/telego/internal/json"
-	ta "github.com/mymmrac/telego/telegoapi"
+	"github.com/koliy82/telego/internal/json"
+	ta "github.com/koliy82/telego/telegoapi"
 )
 
 func testWebhookBot(t *testing.T) *Bot {

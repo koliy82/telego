@@ -8,7 +8,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/mymmrac/telego"
+	"github.com/koliy82/telego"
 )
 
 func testHandler(t *testing.T, bh *BotHandler, wg *sync.WaitGroup) {

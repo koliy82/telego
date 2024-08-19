@@ -9,9 +9,9 @@ import (
 	"github.com/stretchr/testify/require"
 	"go.uber.org/mock/gomock"
 
-	"github.com/mymmrac/telego/internal/json"
-	ta "github.com/mymmrac/telego/telegoapi"
-	mockapi "github.com/mymmrac/telego/telegoapi/mock"
+	"github.com/koliy82/telego/internal/json"
+	ta "github.com/koliy82/telego/telegoapi"
+	mockapi "github.com/koliy82/telego/telegoapi/mock"
 )
 
 const (

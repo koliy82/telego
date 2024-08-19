@@ -9,8 +9,8 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/mymmrac/telego"
-	ta "github.com/mymmrac/telego/telegoapi"
+	"github.com/koliy82/telego"
+	ta "github.com/koliy82/telego/telegoapi"
 )
 
 // namedReaderImpl represents simplest implementation of telegoapi.NamedReader

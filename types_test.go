@@ -8,8 +8,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/mymmrac/telego/internal/json"
-	ta "github.com/mymmrac/telego/telegoapi"
+	"github.com/koliy82/telego/internal/json"
+	ta "github.com/koliy82/telego/telegoapi"
 )
 
 func TestTypesInterfaces(t *testing.T) {

@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/mymmrac/telego"
+	"github.com/koliy82/telego"
 )
 
 // MessageEntityCollection represents text and slice of telego.MessageEntity associated with it

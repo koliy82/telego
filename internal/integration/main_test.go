@@ -12,7 +12,7 @@ import (
 
 	_ "github.com/joho/godotenv/autoload"
 
-	"github.com/mymmrac/telego"
+	"github.com/koliy82/telego"
 )
 
 const (

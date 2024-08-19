@@ -3,7 +3,7 @@ package telegohandler
 import (
 	"context"
 
-	"github.com/mymmrac/telego"
+	"github.com/koliy82/telego"
 )
 
 // MessageHandler handles message that came from bot

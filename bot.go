@@ -9,8 +9,8 @@ import (
 
 	"github.com/valyala/fasthttp"
 
-	"github.com/mymmrac/telego/internal/json"
-	ta "github.com/mymmrac/telego/telegoapi"
+	"github.com/koliy82/telego/internal/json"
+	ta "github.com/koliy82/telego/telegoapi"
 )
 
 const (

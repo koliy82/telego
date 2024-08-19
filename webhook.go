@@ -9,7 +9,7 @@ import (
 	"github.com/fasthttp/router"
 	"github.com/valyala/fasthttp"
 
-	"github.com/mymmrac/telego/internal/json"
+	"github.com/koliy82/telego/internal/json"
 )
 
 const defaultWebhookUpdateChanBuffer = 128

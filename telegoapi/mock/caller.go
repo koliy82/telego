@@ -12,7 +12,7 @@ package mock
 import (
 	reflect "reflect"
 
-	telegoapi "github.com/mymmrac/telego/telegoapi"
+	telegoapi "github.com/koliy82/telego/telegoapi"
 	gomock "go.uber.org/mock/gomock"
 )
 

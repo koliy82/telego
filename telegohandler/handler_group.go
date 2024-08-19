@@ -3,7 +3,7 @@ package telegohandler
 import (
 	"sync"
 
-	"github.com/mymmrac/telego"
+	"github.com/koliy82/telego"
 )
 
 // conditionalHandler represents handler with respectful predicates
